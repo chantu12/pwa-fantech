@@ -22,7 +22,7 @@ module.exports = {
       },
     ],
   },
-  mode: 'none',
+
   plugins: [
     new HtmlWebPackPlugin({
       template: './src/index.html',
