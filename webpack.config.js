@@ -34,5 +34,6 @@ module.exports = {
       clientsClaim: true,
       skipWaiting: true,
     }),
+    new WorkboxPlugin.InjectManifest({ swSrc: './sw.js' }),
   ],
 };
