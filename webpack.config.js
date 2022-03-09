@@ -1,8 +1,7 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const path = require('path');
-const PORT = process.env.PORT || 5000;
 
 module.exports = {
+  entry: './index.js',
   module: {
     rules: [
       {
@@ -25,7 +24,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebPackPlugin({
-      template: './src/index.html',
+      template: './index.html',
       filename: './index.html',
     }),
   ],
